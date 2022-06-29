@@ -27,6 +27,16 @@ const StudentList = () => {
     }, []); // empty array means run on mount
 
 
+/* if(searchTerm){
+    filteredStudents = students.filer(student => {
+    students.filter(student => {
+        const fullName = `${student.firstName} ${student.lastName}
+        const lowercaseName = searchTerm.toLowerCase()
+        return fullName.includes(searchTerm)
+    })
+}
+
+
     // return or JSX
     return (
         <div className="studentList">
